@@ -4,7 +4,7 @@ Wherefore
 Trace down the origin of any value in your Python application.
 
 
-Command-line usage
+Command-line Usage
 ==================
 
 If you want to use wherefore on your entire program and your program has a
@@ -27,7 +27,7 @@ switch, thusly:
     $ wherefore -o report_file "'target value'" program.py
 
 
-Decorator usage
+Decorator Usage
 ===============
 
 If, instead, you want to use wherefore on only a subset of your software, you
@@ -50,7 +50,7 @@ of (file_name, line_number) will be appended to it instead.
         ...
 
 
-Copyright and license
+Copyright and License
 =====================
 
 Copyright 2013 Benji York (benji@benjiyork.com)
