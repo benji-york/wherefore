@@ -1,7 +1,7 @@
 Wherefore
 =========
 
-Trace down the origin of any value in your Python app with Wherefore.
+Trace down the origin of any value in your Python application.
 
 
 Basic usage
@@ -30,3 +30,12 @@ can use the decorator form:
 The code inside the decorated function and the code inside any function it
 calls will be watched for the target value and it will be reported whenever it
 appears.
+
+If you do not want the results sent to stderr you can provide a list and tuples
+of (file_name, line_number) will be appended to it instead.
+
+    whys_and_wherefores = []
+
+    @wherefore('target value', whys_and_wherefores)
+    def my_function():
+        ...
